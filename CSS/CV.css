@@ -1,0 +1,19 @@
+h1{
+    font-size: 18px;
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+h3{
+    color:pink;
+}
+h4{
+    font-size:20px;
+    color:deeppink;
+}
+h5{
+    font-weight: 700;
+    font-size:18px;
+    text-align: right;
+}
