@@ -3,7 +3,7 @@
     font-size:30px;
     text-transform: uppercase;
 }
-.yourdegree{
+.p6{
     font-size:24px;
     text-transform: capitalize;
     font-weight: 700;
@@ -17,17 +17,17 @@
     margin-left:70px;
     text-align: center;
 }
-.james{
+.p4{
     text-align:left;
     font-size:50px;
     text-transform: uppercase;
 }
-.client{
+.p7{
     color:brown;
     font-size:24px;
     text-transform: uppercase;
 }
-.enter{
+.p8{
     font-weight:700;
     font-size:20px;
     text-transform: uppercase;
@@ -47,6 +47,6 @@ body{
     background-size: cover;
     margin:100px 211px 0 230px;
 }
-.profile{
+.p5{
     float: right;
 }
