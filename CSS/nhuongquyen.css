@@ -1,0 +1,54 @@
+.content{
+    background-color: initial;
+    width: 850px;
+    float: left;
+}
+.entry{
+    width:75%;
+    margin: 30px 110px;
+    float:left;
+}
+.sidebar{
+    margin-top: 100px;
+}
+.rightbar{
+    width: 347px;
+    height: 390px;
+    opacity: 100%;
+    float:right;
+    padding: 22px;
+    background-color:initial;
+}
+.rbcontain{
+    text-align: center;
+    float:left;
+    margin: 10px auto;
+    width:100%;
+    height: 350px;
+    font-size:14px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+h3{
+    color: white;
+    padding: 5px;
+}
+.section {
+    float: left;
+    width: 100%;
+    background-image: url("../images/backgroundnq1.jpg");
+    background-size: cover;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #222222;
+    text-align: left;
+    background-color: #eeeeee;
+
+}
+h2 ,h3,p{
+    color: white;
+}
