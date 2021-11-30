@@ -36,7 +36,7 @@ h3{
 .section {
     float: left;
     width: 100%;
-    background-image: url("../images/backgroundnq1.jpg");
+    background-image: url("../images/nhuongquyen3.jpg");
     background-size: cover;
 }
 body {
@@ -46,9 +46,7 @@ body {
     line-height: 1.25;
     color: #222222;
     text-align: left;
-    background-color: #eeeeee;
-
 }
-h2 ,h3,p{
+h2 ,p{
     color: white;
 }
