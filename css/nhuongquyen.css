@@ -17,6 +17,7 @@
 }
 .header a{
     color: white;
+    text-decoration: none;
 }
 img{
     max-width: 80%;
