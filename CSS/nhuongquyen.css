@@ -13,11 +13,11 @@
 .top-header{
     list-style: none;
     float:left;
-    color: white;
     margin: 20px 50px;
 }
 .header a{
     color: white;
+    text-decoration: none;
 }
 img{
     max-width: 80%;
@@ -78,7 +78,6 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.25;
-    color: #222222;
     text-align: left;
     background-image: url("../images/nhuongquyen3.jpg");
     background-size: cover;
@@ -114,7 +113,7 @@ button[type=submit] {
     cursor: pointer;
 }
 .formdk{
-    width: 850px;
+    width: 900px;
     height: 600px;
     margin: auto;
 }
