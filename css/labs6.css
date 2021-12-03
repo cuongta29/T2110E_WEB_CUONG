@@ -1,0 +1,56 @@
+body{
+    background-color:lightgray;
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    position: relative;
+    text-indent: 20px;
+}
+.create{
+    font-size: 30px;
+    line-height: 50px;
+}
+.block{
+    background-color:white;
+    width:790px;
+    height: 696px;
+    margin-left: 30%;
+}
+.main{
+    width: 624px;
+    height: 610px;
+    margin: 0px auto;
+}
+.taskname{
+    height: 48px;
+    width: 100%;
+    background-color: lightgray;
+    font-size: 20px;
+    margin: 20px 24px;
+}
+.company{
+    width:270px;
+    height: 47px;
+    background-color: lightgray;
+    font-size: 20px;
+    margin:0px auto;
+    float:left;
+    margin-left: 24px;
+}
+.chon{
+    float:left;
+    line-height:40px;
+}
+.label{
+    font-weight: 300;
+}
+.chon1{
+    float:right;
+    line-height:40px;
+}
+.button{
+    margin:150px 150px;
+    background-color: deepskyblue;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
