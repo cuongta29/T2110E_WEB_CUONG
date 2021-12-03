@@ -1,0 +1,142 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #222222;
+    text-align: left;
+    background-color:#eeeeee;
+}
+.section{
+    float:left;
+    width: 100%;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    margin: 0 auto;
+    float: left;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin:  0 auto;
+}
+body{
+    background-color: #eeeeee;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.25;
+    font-size: 12px;
+}
+.header{
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+}
+.toplinks li{
+    list-style: none;
+    float:left;
+    margin-left: 20px;
+    font-size:14px;
+    font-weight: 600;
+    line-height:52px;
+}
+.toplinks{
+    float: right;
+}
+.nav{
+    height: 40px;
+    background-color: white;
+}
+.nav .menu .category li{
+    float: left;
+    line-height: 40px;
+    margin-right: 10px;
+    list-style: none;
+}
+.menu .category li a{
+    text-decoration: none;
+    float: left;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.container .topnav{
+    font-size:14px;
+    font-weight: 600;
+    line-height: 40px;
+    float: right;
+}
+.content{
+    background-color: white;
+    width: 800px;
+    float: left;
+}
+.entry{
+    width:75%;
+    margin: 30px 70px;
+    float:left;
+}
+.sample{
+    font-size: 30px;
+    font-weight: 700;
+}
+.news{
+    font-size: 16px;
+}
+.sidebar{
+    margin-top: 30px;
+}
+.rightbar{
+    width: 347px;
+    height: 384px;
+    background-color: #222222;
+    opacity: 70%;
+    float:right;
+}
+.rbcontain{
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    font-size: 14px;
+
+}
+h3{
+    color: white;
+    padding: 10px;
+}
+.insign{
+    background-color: white;
+    color: gray;
+    font-size: 14px;
+    height: 50px;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.insign p{
+    line-height: 50px;
+    text-indent: 20px;
+    background-color: white;
+}
+.subcribe{
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    margin-top: 150px;
+    text-indent: 40%;
+    color: white;
+    line-height: 50px;
+
+}

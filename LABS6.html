@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>labs6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/labs6.css"/>
+</head>
+<body>
+<div class="block">
+    <div class="main">
+        <form method="get" action="#">
+            <label class="create">Create task</label><br/>
+            <input type="text" name="type" placeholder="Type"class="taskname" required/><br/>
+
+            <select name="Company" class="company">
+                <option > Company</option>
+                <option value="google"> Google</option>
+                <option value="apple"> Apple</option>
+                <option value="amazone"> Amazone</option>
+            </select>
+            <select name="opportunity" class="company">
+                <option >Opportunity</option>
+                <option value="google"> Google</option>
+                <option value="apple"> Apple</option>
+                <option value="amazone"> Amazone</option>
+            </select>
+            <input type="text" name="taskname" placeholder="Task name" class="taskname" required/>
+            <input type="text" name="CC" placeholder="CC" class="taskname"  required/>
+            <div class="chon">
+                <label class="label"> Nature of request</label><br/>
+                <input type="checkbox" name="natureofrequest" class="nature"/> Ads review<br/>
+                <input type="checkbox" name="Keywoedsreview" class="nature"/> Keywoeds review<br/>
+                <input type="checkbox" name="Extensionsreview" class="nature"/> Extensionsreview<br/>
+            </div>
+            <div class="chon1">
+                <label class="label"> Current reviewable status</label><br/>
+                <input type="checkbox" name="approves" class="nature"/> Approved<br/>
+                <input type="checkbox" name="notapproved" class="nature"/> Not approved<br/>
+            </div>
+            <button type="submit" class="button"> Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
