@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>labjs3</title>
+    <link rel="stylesheet" href="css/labjs3.css"/>
+</head>
+<body>
+<div class="block">
+    <h1> Xác định vị trí trong Tabs</h1>
+    <ul>
+        <li >
+            <button type="button" class="nav" onclick="hienthi(1)"> <p>Home</p></button>
+        </li>
+        <li >
+            <button type="button" class="nav" onclick="hienthi(2)"> <p>Profile</p></button>
+        </li>
+        <li >
+            <button type="button" class="nav" onclick="hienthi(3)"> <p>Settings</p></button>
+        </li>
+        <li >
+            <button type="button" class="nav" onclick="hienthi(4)"> <p>Massages</p></button>
+        </li>
+    </ul>
+    <div id="thongtin">
+    </div>
+</div>
+<script type="text/javascript">
+    function hienthi(a) {
+        var tt = document.getElementById("thongtin");
+        var nut=document.getElementsByClassName("nav");
+        if (a == 1) {
+            tt.style.display="block";
+            for(var i=0;i<nut.length;i++){
+                nut[i].style.backgroundColor="whitesmoke";
+                nut[i].style.border="none";
+                nut[i].style.borderBottom='1px solid black';
+            }
+            nut[a-1].style.border="1px solid gray";
+            nut[a-1].style.backgroundColor="white";
+            nut[a-1].style.borderBottom="1px solid white";
+            tt.innerText = "This is content of home";
+        }
+        else if (a == 2) {
+            tt.style.display="block";
+            for(var i=0;i<nut.length;i++){
+                nut[i].style.backgroundColor="whitesmoke";
+                nut[i].style.border="none";
+                nut[i].style.borderBottom='1px solid black';
+            }
+            nut[a-1].style.border="1px solid gray";
+            nut[a-1].style.backgroundColor="white";
+            nut[a-1].style.borderBottom="1px solid white";
+            tt.innerText = "This is content of Profile";
+        }
+        else if (a == 3) {
+            tt.style.display="block";
+            for(var i=0;i<nut.length;i++){
+                nut[i].style.backgroundColor="whitesmoke";
+                nut[i].style.border="none";
+                nut[i].style.borderBottom='1px solid black';
+            }
+            nut[a-1].style.border="1px solid gray";
+            nut[a-1].style.backgroundColor="white";
+            nut[a-1].style.borderBottom="1px solid white";
+            tt.innerText = "This is content of Settings";
+        }
+        else if (a == 4) {
+            tt.style.display="block";
+            for(var i=0;i<nut.length;i++){
+                nut[i].style.backgroundColor="whitesmoke";
+                nut[i].style.border="none";
+                nut[i].style.borderBottom='1px solid black';
+            }
+            nut[a-1].style.backgroundColor="white";
+            nut[a-1].style.border="1px solid gray";
+            nut[a-1].style.borderBottom="1px solid white";
+            tt.innerText = "This is content of Massages";
+        }
+    }
+</script>
+</body>
+</html>
