@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>labjs5</title>
+    <title>labjs4</title>
     <link rel="stylesheet" href="css/labjs4.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
 <script type="text/javascript">
     $.ajax(
         {
-            url:"https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+            url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
             method:"GET",
             success:function (data) {
                 var bl=document.getElementById('content');
@@ -50,7 +50,7 @@
                     tp[i].innerHTML=( "Nhiệt độ: "+temp + "<sup>o</sup> C");
                     var icon = data.list[i].weather[0].icon;
                     var ic=document.getElementsByClassName('icon');
-                    ic[i].innerHTML=('<img src="http://openweathermap.org/img/wn/'+icon+'@2x.png"/>');
+                    ic[i].innerHTML=('<img src="https://openweathermap.org/img/wn/'+icon+'@2x.png"/>');
                     var discrition = data.list[i].weather[0].description;
                     var dis=document.getElementsByClassName('discription')
                     dis[i].innerHTML=( "Miêu tả: "+discrition);
