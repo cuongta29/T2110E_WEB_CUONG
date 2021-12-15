@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery</title>
+</head>
+<body>
+<button type="button" onclick="ON()">ON</button>
+<button type="button" onclick="OFF()">OFF</button>
+<button type="button" onclick="TOG()">TOGGLE</button>
+<h1 id="tit" class="x1 x2">Demo jQuery</h1>
+<p id="para" class="x1">Dịch diễn biến phức tạp khiến thành phố chưa chuẩn
+    bị kỹ kịch bản an sinh xã hội, nên quá trình thực hiện gặp nhiều hạn chế, bị động, theo Chủ tịch UBND thành phố.</p>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    // làm thế nào để tạo ra đối tượng jQuery để sử dụng
+    var obj = $("#tit"); // 1 đối tượng đại diện cho 1 tập hợp (mảng)
+    var obj2 = $(".x1"); // 1 đối tượng đại diện cho 1 tập hợp (mảng)
+    // object collection
+    // thao tác với đối tượng này thì cả tập hợp bị ảnh hưởng giống nhau
+    // cũng có thể thao tác trên từng phần tử được
+
+    // một số hàm hay dùng
+    obj.css("color","red");
+    obj2.css(
+        {
+            color:"green",
+            "background-color":"orange"
+        }
+    );
+
+    obj2.text("Xin chào, giá trị vừa bị chỉnh sửa");
+    console.log(obj2.text());
+
+    obj.html("<p>Xin chao, day la noi dung trong the p</p>");
+    obj.append("<i>Hello world!</i>");
+    obj.prepend("<i>Hello world!</i>");
+
+    obj.addClass("x3");
+    obj.removeClass("x2");
+    if(obj.hasClass("x3")){
+        obj.addClass("x4");
+    }
+
+    var para = $("#para");
+    function ON(){
+        // para.show();
+        // para.fadeIn(500);
+        para.slideDown(500);
+    }
+
+    function OFF(){
+        // para.hide();
+        // para.fadeOut(500);
+        para.slideUp(500);
+    }
+    function TOG(){
+        // para.toggle();
+        // para.fadeToggle();
+        para.slideToggle();
+    }
+</script>
+</body>
+</html>

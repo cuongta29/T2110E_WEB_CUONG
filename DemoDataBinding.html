@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Data Binding</title>
+</head>
+<body>
+<h1 class="city">Hà Nội, Việt Nam - Kinh độ: -122  Vĩ độ: 37</h1>
+<h2 class="temp">Nhiệt độ: 18<sup>o</sup>C</h2>
+<h2 class="hum">Độ ẩm: 71%</h2>
+<h2 class="pres">Áp suất: 1023</h2>
+<h2 class="wind">Tốc độ gió: 1.5 km/h</h2>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+  // AJAX - phuong phap trao doi du lieu voi may chu
+  $.ajax(
+          {
+            url: "https://api.openweathermap.org/data/2.5/weather",
+            data:{
+              q: "hanoi,vietnam",
+              units:"metric",
+              appid: "09a71427c59d38d6a34f89b47d75975c"
+            },
+            method:"GET",
+            success: function (data){ // call back - sẽ thực thi khi việc trao đổi dữ liệu thành công
+              var city = data.name;
+              var country = data.sys.country;
+              var long = data.coord.lon;
+              var lat = data.coord.lat;
+              var txt_city = city+", "+country+" - Kinh độ: "+long+"  Vĩ độ: "+lat;
+              var ct = $(".city");
+              ct.text(txt_city);
+              var tmp = data.main.temp;
+              $(".temp").html("Nhiệt độ: "+tmp+"<sup>o</sup>C");
+            }
+          }
+  );
+
+</script>
+</body>
+</html>
